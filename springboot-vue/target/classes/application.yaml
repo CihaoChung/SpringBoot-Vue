@@ -1,0 +1,20 @@
+spring:
+  #�Ȳ���
+  devtools:
+    restart:
+      enabled: true #���ÿ����Ȳ���
+    freemarker:
+      cache: false #ҳ�治���ػ��棬�޸ļ�ʱ��Ч
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/vue-springboot?characterEncoding=UTF-8&useSSL=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true
+    username: root
+    password: admin
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        # �����sql��ʽ��
+        format_sql: true
+server:
+  port: 8181
